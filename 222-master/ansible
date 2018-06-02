@@ -1,0 +1,43 @@
+#####ansible######
+ansible all -m ping
+
+ansible -m ping webserver
+
+ansible all --list-hosts
+
+ansible all -m ping --ask-pass --ask-sudo-pass
+
+ansible-playbook sample.yml –user=a –extra-vars “ansible_sudo_pass=a”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ubuntu]
+172.265.254.25
+
+[ubuntu:vars]
+ansible_user=a
+ansible_password=b
+

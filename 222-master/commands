@@ -1,0 +1,25 @@
+#######linux######
+du -sh
+chsh -s /bin/bash username
+sudo ufw disable
+sudo ufw allow 22
+ps aux | grep yum
+kill -9 [pid:no]
+rm -rf /var/run/yum.pid 22331
+service iptables save    ------
+service iptables stop    ------====   firewall disable
+chkconfig iptables off   ------
+service iptables start                firewall enable
+chkconfig iptables on
+sudo useradd -s /bin/bash -m -d /home/user1 -G sudo user1
+cp -R * /home/tom/backup
+grep user /etc/passwd
+usermod --shell /bin/bash tecmint
+useradd -d /var/lib/jenkins jenkin
+sudo ifconfig eth0 192.168.0.111 netmask 255.255.255.0
+route add default gw 192.168.1.1
+yum remove docker* -y
+lsblk                         (list of volumes)
+mkfs –t ext4 /dev/xvdf        (make filesystem)
+mount /dev/xvdf /home/a/newvolume
+

@@ -1,0 +1,11 @@
+Java  -jar jenkkins.war  --httpPort=8081
+Jenkins.exe  stop          (services in windows)
+
+
+
+
+
+
+
+
+.NET project requirement =  ms build, nuget, nunit
