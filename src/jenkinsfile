@@ -1,21 +1,16 @@
 pipeline {
-    agent any
-
+    agent { label 'master' }
     stages {
-        stage('compile stage') {
-            steps {
-                withmaven(maven: apache-maven-3.5.3){
-                  sh 'maven clean compile'
-                  }
-                 }
-                }
-                  
-        stage('Testing stage') {
-            steps {
-                withmaven(maven: apache-maven-3.5.3){
-                 sh 'maven test'
-             }
-            }
-        }
+       stage('build') {
+          steps {
+             bat 'echo step1'
+             bat 'echo step2'
+             bat '''
+                echo 'Multiline'
+                echo 'Example'
+             '''
+             echo 'not using shell'
+          }
+       }
     }
 }
