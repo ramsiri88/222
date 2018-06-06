@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('compile stage') {
             steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
+                withmaven(maven: apache-maven-3.5.3){
+                  sh 'maven clean compile'
+                  }
+                 }
+                }
+                  
+        stage('Testing stage') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                withmaven(maven: apache-maven-3.5.3){
+                 sh 'maven test'
+             }
             }
         }
     }
