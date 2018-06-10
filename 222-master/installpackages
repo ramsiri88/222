@@ -30,10 +30,11 @@ sudo chkconfig jenkins on
 ###### MYSQL ########
 http://text-analytics101.rxnlp.com/2013/11/how-to-install-mysql-on-amazon-ec2.html
 ### NEXUS ########
-https://devopscube.com/how-to-install-latest-sonatype-nexus-3-on-linux/
-tar -zxvf nexus-3.0.2-02-unix.tar.gz
-cd /opt/nexus-3.0.2-02/bin
-./nexus
+sudo wget http://www.sonatype.org/downloads/nexus-latest-bundle.zip
+sudo chmod 777 nexus-2.11.4-01-bundle.zip
+sudo unzip nexus-2.11.4-01-bundle.zip
+cd nexus-2.11.4-01/bin
+sudo RUN_AS_USER=root ./nexus start
 ######java in ec2######
 http://bhargavamin.com/how-to-do/setting-up-java-environment-variable-on-ec2/
 ####### SONARQUBE ########
