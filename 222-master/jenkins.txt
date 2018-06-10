@@ -1,4 +1,5 @@
 Java  -jar jenkkins.war  --httpPort=8081
+vi /etc/default/jenkins   (to change port number)
 Jenkins.exe  stop          (services in windows)
 
 
