@@ -27,15 +27,16 @@ sudo rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
 sudo yum install Jenkins
 sudo service jenkins start
 sudo chkconfig jenkins on
-######mysql########
+###### MYSQL ########
 http://text-analytics101.rxnlp.com/2013/11/how-to-install-mysql-on-amazon-ec2.html
-###NEXUS########
+### NEXUS ########
 https://devopscube.com/how-to-install-latest-sonatype-nexus-3-on-linux/
+tar -zxvf nexus-3.0.2-02-unix.tar.gz
+cd /opt/nexus-3.0.2-02/bin
+./nexus
 ######java in ec2######
 http://bhargavamin.com/how-to-do/setting-up-java-environment-variable-on-ec2/
-#######################################
-sonarqube
-#######################################
+####### SONARQUBE ########
 https://devopscube.com/setup-and-configure-sonarqube-on-linux/
 ######## JIRA ###########
 https://www.atlassian.com/software/jira/download
