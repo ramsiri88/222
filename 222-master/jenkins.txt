@@ -1,12 +1,14 @@
 Java  -jar jenkkins.war  --httpPort=8081
 vi /etc/default/jenkins   (to change port number)
 Jenkins.exe  stop          (services in windows)
-
-
-
-
-
-
-
-
+#### Upgrade jenkins version #######
+wget http://updates.jenkins-ci.org/download/war/2.9/jenkins.war
+cp /usr/lib/jenkins/jenkins.war /downloads/jenkins.war.previous.version
+cp /downloads/jenkins.war /usr/lib/jenkins/
+systemctl stop jenkins
+systemctl start jenkins
+java -jar jenkins-cli.jar -s http://localhost:8080/ version
+service jenkins stop
+mv JENKINS_HOME/config.xml JENKINS_HOME/config.xml_bak
+service jenkins start
 .NET project requirement =  ms build, nuget, nunit
