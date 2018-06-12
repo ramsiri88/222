@@ -2,6 +2,15 @@
 #
 var="123456"
 echo "$var"
+#
+var= ls /etc
+echo $var
+#
+echo enter your name:
+read name
+echo hello $name
+#
+
 
 #####backup file######
 #
