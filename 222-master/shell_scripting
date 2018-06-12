@@ -1,0 +1,9 @@
+#####sample#####
+#
+var="123456"
+echo "$var"
+
+#####backup file######
+#
+output_package=/opt/backup_$(date y%m%d).tar.gz
+tar -czf $output_package /home/a/keerti
