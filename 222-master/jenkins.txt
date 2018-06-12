@@ -12,3 +12,4 @@ service jenkins stop
 mv JENKINS_HOME/config.xml JENKINS_HOME/config.xml_bak
 service jenkins start
 .NET project requirement =  ms build, nuget, nunit
+Msbuild file = ${WORKSPACE}/Practice/Practice.sln
