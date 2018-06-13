@@ -1,5 +1,5 @@
 #######linux######
-grep -iRl "172.168.77.44" ./
+grep -r "172.168.77.44" ~/
 du -sh
 chsh -s /bin/bash username
 sudo ufw disable
