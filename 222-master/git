@@ -2,10 +2,10 @@ git config --global push.default "simple"
 
 git push -f origin master
 
-git pull http.git –depth 1      (curl error)
+git pull http.git â€“depth 1      (curl error)
 
-ssh-keygen –t rsa
+ssh-keygen â€“t rsa
 
-git push –set-upstream origin master –f
+git push â€“set-upstream origin master â€“f
 
-
+git remote add origin https://github.com/ramsiri88/222/
