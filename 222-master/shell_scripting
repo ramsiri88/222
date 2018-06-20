@@ -20,4 +20,9 @@ hi $name
 echo "file is creating on the name of $name
 touch $name
 rm -rf 3
+#####FOR######
 #
+for i in 1 2 3 4 5
+do 
+echo "number $i"
+done
