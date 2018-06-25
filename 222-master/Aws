@@ -1,0 +1,11 @@
+#######Auto scaling########
+Its scales infrastructure when ever we needed
+Automatically increase and decrease the scaling group
+Adds new instances when load reaches certain level and spin down when no longer needed
+Auto scaling is automatically registered with the load balancer this is increase the fault tolarance of application
+Fault tolarance = Enaables a system to continue operating properly in the event of failure
+#######ELB###########
+Its automatically routes incoming traffic across dynamically changing number of multiple instances
+Its acts as a single point of contact for all incoming traffic to the instances in auto scaling group
+It is used to monitor the health of the registered instances so the load balancer send the requested traffic to heathy instances
+
