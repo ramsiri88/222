@@ -7,8 +7,16 @@ ansible all --list-hosts
 
 ansible all -m ping --ask-pass --ask-sudo-pass
 
-ansible-playbook sample.yml –user=a –extra-vars “ansible_sudo_pass=a”
+ansible-playbook sample.yml â€“user=a â€“extra-vars â€œansible_sudo_pass=aâ€
 
+
+
+
+###########Ansible use cases###########
+1. We can deploy apps in reliable and repeataAble way
+2. Ansible supports the configuration in multiple environments
+3. It can be userd in orchestration of complex deployment in simple way
+4. 
 
 
 
