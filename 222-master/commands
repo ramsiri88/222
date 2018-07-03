@@ -28,3 +28,4 @@ rm -i !(*.zip)                                   (except .zip)
 rm -v !(*.zip|*.exe)                             (except .zip and .exe)
 cp /opt/a/*.txt /opt/b/
 find / -type d -name "apt*" -ls
+ls -l | grep "abc" | wc -l                        (pipe)
