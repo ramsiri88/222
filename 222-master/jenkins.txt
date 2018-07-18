@@ -13,3 +13,19 @@ mv JENKINS_HOME/config.xml JENKINS_HOME/config.xml_bak
 service jenkins start
 .NET project requirement =  ms build, nuget, nunit
 Msbuild file = ${WORKSPACE}/Practice/Practice.sln
+
+
+######SONAR#######
+<profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url>
+                  http://localhost:9000
+                </sonar.host.url>
+            </properties>
+        </profile>
+#######SONAR#######
