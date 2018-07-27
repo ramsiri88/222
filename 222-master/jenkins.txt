@@ -16,6 +16,18 @@ Msbuild file = ${WORKSPACE}/Practice/Practice.sln
 
 
 ######SONAR#######
+
+<pluginGroups>
+    <!-- pluginGroup
+     | Specifies a further group identifier to use for plugin lookup.
+    <pluginGroup>com.your.plugins</pluginGroup>
+	
+    -->
+	
+	 <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+  </pluginGroups>
+
+
 <profile>
             <id>sonar</id>
             <activation>
