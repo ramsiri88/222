@@ -29,4 +29,14 @@ rm -v !(*.zip|*.exe)                             (except .zip and .exe)
 cp /opt/a/*.txt /opt/b/
 find / -type d -name "apt*" -ls
 ls -l | grep "abc" | wc -l                        (pipe)
-cat /etc/*release*                                (to see the OS u on)
+cat /etc/*osrelease*                              (to see the OS u on)
+fsck                                              (to ckeck the consistency of file system)
+fuser                                             (which process are using specified filesystem)
+free                                              (to check ram size)
+lsof           /proc/sys/fs/file                  (to see opened files)
+nproc                                             (no of cores)
+uptime                                            (load on cpu)
+
+
+
+
