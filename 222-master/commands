@@ -36,6 +36,7 @@ free                                              (to check ram size)
 lsof           /proc/sys/fs/file                  (to see opened files)
 nproc                                             (no of cores)
 uptime                                            (load on cpu)
+dpkg -s apache2 | grep status                     (check the status of the package)
 
 
 
